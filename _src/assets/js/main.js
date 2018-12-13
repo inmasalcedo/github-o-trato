@@ -12,8 +12,15 @@ function handlerUserInfo(event) {
       return response.json();
     })
     .then(function (data) {
-      githubNameElement.innerHTML = data.name;
+      const nameSurname = data.name;
+      const arrayNameSurname = nameSurname.split(' ');
+      const arrayLetters = arrayNameSurname[0].split('');
+      console.log(arrayLetters);
+      for (let i = 0; i < arrayLetters.length; i++) {
+        githubNameElement.innerHTML += `<li class="letter">${arrayLetters[i]}</li>`;
+      }
     });
 }
+
 
 btnElement.addEventListener('click', handlerUserInfo);

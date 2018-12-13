@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #7DD181;
+    background-color: #B6F9C9;
+}
+
+.githubName {
+    display: flex;
+}
+
+.letter {
+    width: 20px;
+    height: 30px;
+    margin: 0 10px;
+    border: 2px solid #3B6064;
+    background-color:  #C9FFE2;
+    color: #2D936C;
+    list-style: none;
+}
