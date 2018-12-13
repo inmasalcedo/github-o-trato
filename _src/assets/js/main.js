@@ -1,3 +1,6 @@
 'use strict';
 
-console.log('>> Ready :)');
+const tryElement = document.querySelector('.text');
+
+tryElement.innerHTML = 'Prueba';
+
